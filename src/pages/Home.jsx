@@ -9,8 +9,10 @@ import Hero from "../parts/HomePage/Hero";
 const Home = () => {
   return (
     <>
-      <Header />
-      <Hero />
+      <div className="overflow-hidden">
+        <Header />
+        <Hero />
+      </div>
     </>
   );
 };
