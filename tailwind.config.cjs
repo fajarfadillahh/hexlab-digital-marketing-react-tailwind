@@ -15,7 +15,7 @@ module.exports = {
     },
     extend: {
       lineHeight: {
-        title: "145%",
+        title: "120%",
         text: "180%",
       },
       transitionDuration: {
