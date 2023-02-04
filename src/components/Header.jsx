@@ -22,17 +22,17 @@ const Header = () => {
 
         {/* header menu */}
         <div
-          className={`header__menu fixed right-[8%] top-20 w-[250px] origin-top-right rounded-3xl bg-white p-6 shadow-[0_0_16px_rgba(0,0,0,0.12)] transition-all duration-400 ${
+          className={`header__menu fixed right-[8%] top-20 w-[250px] origin-top-right rounded-3xl bg-white p-6 shadow-[0_0_16px_rgba(0,0,0,0.12)] transition-all duration-400 lg:static lg:right-0 lg:top-0 lg:flex lg:w-auto lg:scale-100 lg:items-center lg:gap-6 lg:bg-transparent lg:p-0 lg:shadow-none ${
             menuOpen ? "scale-100" : "scale-0"
           }`}
         >
-          <ul className="header__list mb-6 flex flex-col">
+          <ul className="header__list mb-6 flex flex-col lg:mb-0 lg:flex-row lg:gap-6">
             {headerList.map((item, index) => {
               return (
                 <Link
                   key={index}
                   to={item.url}
-                  className="header__item flex h-[52px] rounded-full p-4 text-[15px] font-medium text-gray-900 hover:bg-gray-100"
+                  className="header__item flex h-[52px] rounded-full p-4 text-[15px] font-medium text-gray-900 hover:bg-gray-100 lg:h-auto lg:p-0 lg:hover:bg-transparent lg:hover:text-blue-600"
                 >
                   {item.title}
                 </Link>
@@ -48,7 +48,7 @@ const Header = () => {
 
         {/* header toggle */}
         <div
-          className="header__toggle inline-flex cursor-pointer p-1 text-[1.3rem] text-gray-900"
+          className="header__toggle inline-flex cursor-pointer p-1 text-[1.3rem] text-gray-900 lg:hidden"
           onClick={() => setMenuOpen(!menuOpen)}
         >
           {menuOpen ? <RiCloseFill /> : <RiMenu3Fill />}
