@@ -7,7 +7,7 @@ const Feature = () => {
   return (
     <section className="feature section relative">
       {/* gradient accent */}
-      <div className="absolute top-72 -left-56 -z-10 h-[460px] w-[460px] rounded-full bg-gradient-to-b from-green-500/80 to-yellow-300/80 blur-[100px]" />
+      <div className="absolute top-96 -left-56 -z-10 h-[460px] w-[460px] rounded-full bg-gradient-to-b from-green-500/80 to-yellow-300/80 blur-[100px]" />
 
       <div className="feature__container container grid gap-12">
         <div className="feature__data text-center">
@@ -27,7 +27,7 @@ const Feature = () => {
                 <img
                   src={item.icon}
                   alt="feature icon"
-                  className="feature__content w-16"
+                  className="feature__content w-16 drop-shadow-lg"
                 />
 
                 <div className="feature__content-data text-center">
