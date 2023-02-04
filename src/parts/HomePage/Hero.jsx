@@ -10,6 +10,7 @@ const Hero = () => {
     <section className="hero relative pt-32 pb-16">
       {/* gradient accents */}
       <div className="absolute -top-20 -left-48 -z-10 h-[460px] w-[460px] rounded-full bg-gradient-to-tr from-pink-500 to-yellow-300 blur-[100px]" />
+      <div className="absolute -bottom-12 -right-48 -z-10 h-[360px] w-[360px] rounded-full bg-gradient-to-tr from-yellow-300 to-pink-500 blur-[100px]" />
 
       <div className="hero__container container grid gap-12">
         <div className="hero__data text-center">
