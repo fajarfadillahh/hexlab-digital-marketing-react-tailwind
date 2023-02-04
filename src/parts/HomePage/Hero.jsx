@@ -35,7 +35,11 @@ const Hero = () => {
           </Link>
         </div>
 
-        <img src={HeroImg} alt="hero img" className="hero__img" />
+        <img
+          src={HeroImg}
+          alt="hero img"
+          className="hero__img justify-self-center"
+        />
       </div>
     </section>
   );

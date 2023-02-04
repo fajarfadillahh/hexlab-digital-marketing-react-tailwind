@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { RiMenu3Fill, RiCloseFill } from "react-icons/ri";
 
@@ -9,8 +9,25 @@ const Header = () => {
   // menu open state
   const [menuOpen, setMenuOpen] = useState(false);
 
+  // shadow header states
+  const [shadowHeader, setShadowHeader] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 5) {
+        setShadowHeader(true);
+      } else {
+        setShadowHeader(false);
+      }
+    });
+  });
+
   return (
-    <header className="header fixed top-0 left-0 z-50 w-full">
+    <header
+      className={`header fixed top-0 left-0 z-50 w-full transition-all duration-400 ${
+        shadowHeader ? "bg-white shadow-md" : "bg-transparent shadow-none"
+      }`}
+    >
       <div className="header__container container flex h-24 items-center justify-between">
         {/* header logo */}
         <Link
