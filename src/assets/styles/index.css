@@ -1,3 +1,7 @@
+/* Import Css */
+@import url("./_fonts.css");
+@import url("./_reusables.css");
+
 /* Tailwind Directive */
 @tailwind base;
 @tailwind components;

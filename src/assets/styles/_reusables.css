@@ -1,0 +1,34 @@
+@layer components {
+  /* section class */
+  .section {
+    @apply pt-24 pb-16;
+  }
+  .section-subtitle {
+    @apply pb-4 text-[15px] font-semibold -tracking-wide text-blue-600;
+  }
+  .section-title {
+    @apply pb-4 text-[28px] font-extrabold leading-title -tracking-wide text-gray-900;
+  }
+  .section-text {
+    @apply text-[15px] font-medium leading-text -tracking-wide text-gray-600;
+  }
+
+  /* button class */
+  .button {
+    @apply flex h-[52px] items-center justify-center gap-2 rounded-full py-4 px-8 text-[15px] font-semibold -tracking-wide transition;
+  }
+  .button-fill {
+    @apply bg-blue-600 text-white hover:bg-blue-800;
+  }
+  .button-outline {
+    @apply border-[1.5px] border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white;
+  }
+  .button-icon {
+    @apply inline-flex text-[1.3rem];
+  }
+
+  /* container class */
+  .container {
+    @apply mx-auto w-[calc(100%-3rem)] max-w-[1200px];
+  }
+}
