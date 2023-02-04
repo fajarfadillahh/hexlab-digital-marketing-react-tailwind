@@ -7,6 +7,7 @@ import Feature from "../components/Feature";
 // import parts
 import Hero from "../parts/HomePage/Hero";
 import About from "../parts/HomePage/About";
+import Experience from "../parts/HomePage/Experience";
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
         <Hero />
         <Feature />
         <About />
+        <Experience />
       </div>
     </>
   );

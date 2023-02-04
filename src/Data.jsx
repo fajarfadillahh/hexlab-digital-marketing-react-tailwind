@@ -59,3 +59,22 @@ export const featureData = [
     text: "Our creative team made a great and beautiful brands",
   },
 ];
+
+// experience data
+export const experienceData = [
+  {
+    number: "01",
+    title: "+26 years",
+    text: "We have been in the industry for more 26 years experience.",
+  },
+  {
+    number: "02",
+    title: "Creative team",
+    text: "We the best creative team that bring your ideas to ideas.",
+  },
+  {
+    number: "03",
+    title: "we're helpful",
+    text: "We love to help clients to achieve their online goals.",
+  },
+];

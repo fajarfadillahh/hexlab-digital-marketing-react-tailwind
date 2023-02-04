@@ -10,7 +10,7 @@ const About = () => {
   return (
     <section className="about section relative">
       {/* gradient accent */}
-      <div className="absolute bottom-60 -right-48 -z-10 h-[360px] w-[360px] rounded-full bg-gradient-to-tr from-pink-400 to-purple-400 blur-[100px]" />
+      <div className="absolute bottom-60 -right-48 -z-10 h-[360px] w-[360px] rounded-full bg-gradient-to-tr from-pink-400/80 to-purple-400/80 blur-[100px]" />
 
       <div className="about__container container grid gap-12">
         <img src={AboutImg} alt="about img" className="about__img" />
