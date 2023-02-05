@@ -12,14 +12,14 @@ const About = () => {
       {/* gradient accent */}
       <div className="absolute bottom-60 -right-48 -z-10 h-[360px] w-[360px] rounded-full bg-gradient-to-tr from-pink-400/80 to-purple-400/80 blur-[100px]" />
 
-      <div className="about__container container grid gap-12">
+      <div className="about__container container grid justify-items-center gap-12 sm:max-w-md xl:max-w-4xl xl:grid-cols-2 2xl:max-w-5xl">
         <img src={AboutImg} alt="about img" className="about__img" />
 
-        <div className="about__data text-center">
+        <div className="about__data text-center xl:text-left">
           <img
             src={AboutIcon}
             alt="about icon"
-            className="about__icon mx-auto w-16 pb-4 drop-shadow-lg"
+            className="about__icon mx-auto w-16 pb-4 drop-shadow-lg xl:m-0"
           />
           <p className="about__subtitle section-subtitle">Our team</p>
           <h1 className="about__title section-title">
