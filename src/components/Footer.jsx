@@ -14,8 +14,8 @@ import {
 const Footer = () => {
   return (
     <footer className="footer bg-gray-900 pt-24 pb-8">
-      <div className="subscribe__container container grid gap-20">
-        <div className="subscribe__group grid gap-12">
+      <div className="subscribe__container container grid gap-20 2xl:max-w-5xl">
+        <div className="subscribe__group grid gap-12 xs:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 xl:justify-items-center">
           <div className="subscribe__content">
             <Link
               to="/"
@@ -27,8 +27,8 @@ const Footer = () => {
               Hexlab is digital agency that has evolved to the meet changing
               needs of marketing in the digital age.
             </p>
-            <div className="footer__theme mt-8 inline-flex h-[52px] cursor-pointer items-center gap-2 rounded-full bg-blue-600 p-4 font-semibold text-white">
-              <RiMoonClearFill className="inline-flex text-[1.8rem] hover:bg-blue-800" />
+            <div className="footer__theme mt-8 inline-flex h-[52px] cursor-pointer items-center gap-2 rounded-full bg-blue-600 p-4 font-semibold text-white hover:bg-blue-800">
+              <RiMoonClearFill className="inline-flex text-[1.8rem]" />
               Theme toggle.
             </div>
           </div>
