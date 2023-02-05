@@ -7,7 +7,7 @@
     @apply pb-4 text-[15px] font-semibold -tracking-wide text-blue-600;
   }
   .section-title {
-    @apply pb-4 text-[48px] font-bold leading-title -tracking-wide text-gray-900;
+    @apply pb-4 text-[48px] font-bold leading-title -tracking-wide text-gray-900 md:text-[56px];
   }
   .section-text {
     @apply text-[15px] font-medium leading-text -tracking-wide text-gray-600;

@@ -9,15 +9,15 @@ const Feature = () => {
       {/* gradient accent */}
       <div className="absolute top-96 -left-56 -z-10 h-[460px] w-[460px] rounded-full bg-gradient-to-b from-green-500/80 to-yellow-300/80 blur-[100px]" />
 
-      <div className="feature__container container grid gap-12">
-        <div className="feature__data text-center">
+      <div className="feature__container container grid gap-12 2xl:max-w-5xl 2xl:grid-cols-2 2xl:items-center">
+        <div className="feature__data justify-self-center text-center sm:max-w-lg 2xl:text-left">
           <p className="feature__subtitle section-subtitle">What we do?</p>
           <h1 className="feature__title section-title">
             We're team of creatives who are excited about unique ideas.
           </h1>
         </div>
 
-        <div className="feature__group grid grid-cols-[0.8fr] justify-center gap-8">
+        <div className="feature__group grid grid-cols-[0.8fr] justify-center gap-8 md:w-max md:grid-cols-2 md:justify-self-center">
           {featureData.map((item, index) => {
             return (
               <div
