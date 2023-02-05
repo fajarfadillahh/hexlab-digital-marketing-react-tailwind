@@ -4,6 +4,7 @@ import React from "react";
 import Header from "../components/Header";
 import Feature from "../components/Feature";
 import Testimonial from "../components/Testimonial";
+import Subscribe from "../components/Subscribe";
 
 // import parts
 import Hero from "../parts/HomePage/Hero";
@@ -24,6 +25,7 @@ const Home = () => {
         <Portfolio />
         <Team />
         <Testimonial />
+        <Subscribe />
       </div>
     </>
   );
