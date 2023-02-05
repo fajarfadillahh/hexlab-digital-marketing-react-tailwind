@@ -9,12 +9,15 @@ import TeamImg1 from "./assets/images/team-img-1.png";
 import TeamImg2 from "./assets/images/team-img-2.png";
 import TeamImg3 from "./assets/images/team-img-3.png";
 import TeamImg4 from "./assets/images/team-img-4.png";
+import TestimonialProfile1 from "./assets/images/testimonial-profile-1.png";
+import TestimonialProfile2 from "./assets/images/testimonial-profile-2.png";
 
 // import icons
 import FeatureIcon1 from "./assets/images/icons/feature-icon-1.png";
 import FeatureIcon2 from "./assets/images/icons/feature-icon-2.png";
 import FeatureIcon3 from "./assets/images/icons/feature-icon-3.png";
 import FeatureIcon4 from "./assets/images/icons/feature-icon-4.png";
+import TestimonialComma from "./assets/images/icons/icon-comma.png";
 
 // header list menu
 export const headerList = [
@@ -146,5 +149,25 @@ export const teamData = [
     image: TeamImg4,
     name: "Bella William",
     profession: "UI/UX Designer",
+  },
+];
+
+// testimonial data
+export const testimonialData = [
+  {
+    icon: TestimonialComma,
+    comment:
+      "I'm trusted my company allies and the results have benn satisfying, because my company has growing.",
+    profileImg: TestimonialProfile1,
+    name: "Mika Wolff",
+    profession: "Product Manager",
+  },
+  {
+    icon: TestimonialComma,
+    comment:
+      "I'm very fortunate to trust my company to allies nad now my company income is increasing.",
+    profileImg: TestimonialProfile2,
+    name: "Mika Wolff",
+    profession: "Product Manager",
   },
 ];

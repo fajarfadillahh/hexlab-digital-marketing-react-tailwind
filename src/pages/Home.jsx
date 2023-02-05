@@ -3,6 +3,7 @@ import React from "react";
 // import components
 import Header from "../components/Header";
 import Feature from "../components/Feature";
+import Testimonial from "../components/Testimonial";
 
 // import parts
 import Hero from "../parts/HomePage/Hero";
@@ -22,6 +23,7 @@ const Home = () => {
         <Experience />
         <Portfolio />
         <Team />
+        <Testimonial />
       </div>
     </>
   );
