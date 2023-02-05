@@ -8,6 +8,7 @@ import Feature from "../components/Feature";
 import Hero from "../parts/HomePage/Hero";
 import About from "../parts/HomePage/About";
 import Experience from "../parts/HomePage/Experience";
+import Portfolio from "../parts/HomePage/Portfolio";
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
         <Feature />
         <About />
         <Experience />
+        <Portfolio />
       </div>
     </>
   );

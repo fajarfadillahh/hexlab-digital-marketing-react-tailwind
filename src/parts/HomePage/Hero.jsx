@@ -14,7 +14,7 @@ const Hero = () => {
 
       <div className="hero__container container grid gap-12">
         <div className="hero__data text-center">
-          <h1 className="hero__title section-title text-[72px]">
+          <h1 className="hero__title section-title text-[72px] leading-[100%]">
             We're
             <br />
             <span className="relative">
