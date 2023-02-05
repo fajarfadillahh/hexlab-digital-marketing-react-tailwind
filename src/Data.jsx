@@ -167,7 +167,7 @@ export const testimonialData = [
     comment:
       "I'm very fortunate to trust my company to allies nad now my company income is increasing.",
     profileImg: TestimonialProfile2,
-    name: "Mika Wolff",
-    profession: "Product Manager",
+    name: "Bryan Rop",
+    profession: "Graphic Manager",
   },
 ];

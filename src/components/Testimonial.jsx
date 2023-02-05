@@ -48,7 +48,7 @@ const Testimonial = () => {
                     alt="profile img"
                     className="testimonial__content-img w-16 pb-4"
                   />
-                  <h3 className="testimonial__content-name section-title pb-1 text-[32px]">
+                  <h3 className="testimonial__content-name section-title pb-1 text-[28px]">
                     {item.name}
                   </h3>
                   <p className="testimonial__content-profession section-text pb-3">
