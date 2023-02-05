@@ -15,7 +15,7 @@
 
   /* button class */
   .button {
-    @apply flex h-[52px] items-center justify-center gap-2 rounded-full py-4 px-8 text-[15px] font-semibold -tracking-wide transition;
+    @apply flex h-[52px] items-center justify-center gap-2 rounded-full py-4 px-8 text-[15px] font-semibold -tracking-wide transition xs:inline-flex;
   }
   .button-fill {
     @apply bg-blue-600 text-white hover:bg-blue-800;
