@@ -5,6 +5,7 @@ import Header from "../components/Header";
 import Feature from "../components/Feature";
 import Testimonial from "../components/Testimonial";
 import Subscribe from "../components/Subscribe";
+import Footer from "../components/Footer";
 
 // import parts
 import Hero from "../parts/HomePage/Hero";
@@ -26,6 +27,7 @@ const Home = () => {
         <Team />
         <Testimonial />
         <Subscribe />
+        <Footer />
       </div>
     </>
   );
