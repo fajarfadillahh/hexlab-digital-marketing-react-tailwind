@@ -8,6 +8,9 @@ import SubscribeIcon from "../assets/images/icons/icon-postbox.png";
 const Subscribe = () => {
   return (
     <section className="subscribe section relative">
+      {/* gradient accents */}
+      <div className="absolute top-0 -right-48 -z-10 h-[460px] w-[460px] rounded-full bg-gradient-to-tr from-pink-500/80 to-yellow-300/80 blur-[100px]" />
+
       <div className="subscribe__container container grid gap-12">
         <div className="subscribe__data text-center">
           <img
@@ -30,7 +33,7 @@ const Subscribe = () => {
           <input
             type="email"
             placeholder="Enter your email address"
-            className="subscribe__input h-[52px] w-full px-2 text-[15px] font-semibold text-gray-900 outline-none placeholder:font-medium placeholder:text-gray-400"
+            className="subscribe__input h-[52px] w-full bg-transparent px-2 text-[15px] font-semibold text-gray-900 outline-none placeholder:font-medium placeholder:text-gray-400"
           />
           <Link to="/" className="subscribe__button button button-fill">
             Subscribe
