@@ -9,6 +9,7 @@ import Hero from "../parts/HomePage/Hero";
 import About from "../parts/HomePage/About";
 import Experience from "../parts/HomePage/Experience";
 import Portfolio from "../parts/HomePage/Portfolio";
+import Team from "../parts/HomePage/Team";
 
 const Home = () => {
   return (
@@ -20,6 +21,7 @@ const Home = () => {
         <About />
         <Experience />
         <Portfolio />
+        <Team />
       </div>
     </>
   );

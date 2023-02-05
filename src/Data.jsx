@@ -5,6 +5,10 @@ import PortfolioImg3 from "./assets/images/portfolio-img-3.png";
 import PortfolioImg4 from "./assets/images/portfolio-img-4.png";
 import PortfolioImg5 from "./assets/images/portfolio-img-5.png";
 import PortfolioImg6 from "./assets/images/portfolio-img-6.png";
+import TeamImg1 from "./assets/images/team-img-1.png";
+import TeamImg2 from "./assets/images/team-img-2.png";
+import TeamImg3 from "./assets/images/team-img-3.png";
+import TeamImg4 from "./assets/images/team-img-4.png";
 
 // import icons
 import FeatureIcon1 from "./assets/images/icons/feature-icon-1.png";
@@ -118,5 +122,29 @@ export const portfolioData = [
     image: PortfolioImg6,
     subtitle: "Mobile App Design",
     title: "Mental Health App",
+  },
+];
+
+// team data
+export const teamData = [
+  {
+    image: TeamImg1,
+    name: "Adam Watson",
+    profession: "Chief Executive Officer",
+  },
+  {
+    image: TeamImg2,
+    name: "David Snow",
+    profession: "Frontend Developer",
+  },
+  {
+    image: TeamImg3,
+    name: "Sarah Jones",
+    profession: "Product Designer",
+  },
+  {
+    image: TeamImg4,
+    name: "Bella William",
+    profession: "UI/UX Designer",
   },
 ];
