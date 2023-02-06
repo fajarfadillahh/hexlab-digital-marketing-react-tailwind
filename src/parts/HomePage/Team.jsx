@@ -12,7 +12,7 @@ const Team = () => {
       {/* gradient accent */}
       <div className="absolute top-60 -left-48 -z-10 h-[360px] w-[360px] rounded-full bg-gradient-to-t from-pink-600/80 to-blue-600/80 blur-[100px]" />
 
-      <div className="team__container container grid gap-12">
+      <div className="team__container container grid gap-12 2xl:max-w-5xl">
         <div className="team__data text-center">
           <img
             src={TeamIcon}
@@ -27,10 +27,13 @@ const Team = () => {
           </h1>
         </div>
 
-        <div className="team__group grid grid-cols-[0.8fr] justify-center gap-12">
+        <div className="team__group grid grid-cols-[0.8fr] justify-center gap-12 sm:max-w-lg sm:grid-cols-2 sm:justify-self-center xl:max-w-4xl xl:grid-cols-3 2xl:max-w-max 2xl:grid-cols-4">
           {teamData.map((item, index) => {
             return (
-              <div key={index} className="team__content grid gap-6">
+              <div
+                key={index}
+                className="team__content grid justify-center gap-6"
+              >
                 <img
                   src={item.image}
                   alt="team profile img"

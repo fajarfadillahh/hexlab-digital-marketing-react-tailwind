@@ -132,7 +132,7 @@ export const portfolioData = [
 export const teamData = [
   {
     image: TeamImg1,
-    name: "Adam Watson",
+    name: "Zyan Maliq",
     profession: "Chief Executive Officer",
   },
   {
