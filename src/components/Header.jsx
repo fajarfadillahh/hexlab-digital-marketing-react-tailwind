@@ -58,7 +58,7 @@ const Header = () => {
           </ul>
 
           {/* header buttons */}
-          <Link to="/" className="header__button button button-fill">
+          <Link to="/" className="header__button button button-fill flex">
             Let's talk
           </Link>
         </div>
