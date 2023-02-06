@@ -6,6 +6,7 @@ import Feature from "../components/Feature";
 import Testimonial from "../components/Testimonial";
 import Subscribe from "../components/Subscribe";
 import Footer from "../components/Footer";
+import ScrollToTop from "../components/ScrollToTop";
 
 // import parts
 import Hero from "../parts/HomePage/Hero";
@@ -28,6 +29,7 @@ const Home = () => {
         <Testimonial />
         <Subscribe />
         <Footer />
+        <ScrollToTop />
       </div>
     </>
   );
