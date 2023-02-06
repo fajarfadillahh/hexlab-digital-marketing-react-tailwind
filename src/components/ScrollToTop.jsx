@@ -23,8 +23,8 @@ const ScrollToTop = () => {
 
   return (
     <div
-      className={`scrolltop fixed right-6 z-50 inline-flex cursor-pointer rounded-lg bg-blue-600 p-3 text-[1.5rem] text-white transition-all duration-400 hover:bg-blue-800 ${
-        scrollVisible ? "bottom-12" : "-bottom-full"
+      className={`scrolltop fixed right-6 z-50 inline-flex cursor-pointer rounded-lg bg-blue-600 p-3 text-[1.5rem] text-white transition-all duration-400 hover:bg-blue-800 2xl:right-10 ${
+        scrollVisible ? "bottom-12 2xl:bottom-16" : "-bottom-full"
       }`}
       onClick={scrollToTop}
     >
