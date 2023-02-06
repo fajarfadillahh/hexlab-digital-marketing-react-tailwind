@@ -11,12 +11,12 @@ import { RiStarFill } from "react-icons/ri";
 const Testimonial = () => {
   return (
     <section className="testimonial section relative">
-      <div className="testimonial__container container grid gap-12">
-        <div className="testimonial__data text-center">
+      <div className="testimonial__container container grid gap-12 xl:grid-cols-[0.6fr_1fr] 2xl:max-w-5xl">
+        <div className="testimonial__data text-center xl:text-left">
           <img
             src={TestimonialIcon}
             alt="testimonial icon"
-            className="testimonial__icon mx-auto w-16 pb-4 drop-shadow-lg"
+            className="testimonial__icon mx-auto w-16 pb-4 drop-shadow-lg xl:m-0"
           />
           <p className="testimonial__subtitle section-subtitle">Testimonials</p>
           <h1 className="testimonial__title section-title pb-0">
@@ -27,7 +27,7 @@ const Testimonial = () => {
           </h1>
         </div>
 
-        <div className="testimonial__group grid grid-cols-[0.8fr] justify-center gap-8">
+        <div className="testimonial__group grid grid-cols-[0.8fr] justify-center gap-8 xs:max-w-sm xs:justify-self-center md:max-w-xl md:grid-cols-2 xl:justify-self-end">
           {testimonialData.map((item, index) => {
             return (
               <div key={index} className="testimonial__content grid gap-6">
