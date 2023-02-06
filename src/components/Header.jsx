@@ -25,14 +25,18 @@ const Header = () => {
   return (
     <header
       className={`header fixed top-0 left-0 z-50 w-full transition-all duration-400 ${
-        shadowHeader ? "bg-white shadow-md" : "bg-transparent shadow-none"
+        shadowHeader
+          ? "bg-white shadow-md dark:bg-gray-900"
+          : "bg-transparent shadow-none"
       }`}
     >
       <div className="header__container container flex h-24 items-center justify-between">
         {/* header logo */}
         <Link
           to="/"
-          className="header__logo text-[20px] font-extrabold text-gray-900"
+          className={`header__logo text-[20px] font-extrabold ${
+            shadowHeader ? "dark:text-white" : "text-gray-900"
+          }`}
         >
           Hexlab<span className="text-blue-600">.</span>
         </Link>
@@ -65,7 +69,9 @@ const Header = () => {
 
         {/* header toggle */}
         <div
-          className="header__toggle inline-flex cursor-pointer p-1 text-[1.3rem] text-gray-900 lg:hidden"
+          className={`header__toggle inline-flex cursor-pointer p-1 text-[1.3rem] lg:hidden ${
+            shadowHeader ? "dark:text-white" : "text-gray-900"
+          }`}
           onClick={() => setMenuOpen(!menuOpen)}
         >
           {menuOpen ? <RiCloseFill /> : <RiMenu3Fill />}

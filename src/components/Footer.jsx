@@ -6,12 +6,18 @@ import {
   RiGithubFill,
   RiInstagramFill,
   RiMoonClearFill,
+  RiSunFill,
   RiTwitchFill,
   RiTwitterFill,
   RiYoutubeFill,
 } from "react-icons/ri";
 
+// import custom use color mode hooks
+import useColorMode from "../hooks/useColorMode";
+
 const Footer = () => {
+  const [colorMode, setColorMode] = useColorMode();
+
   return (
     <footer className="footer bg-gray-900 pt-24 pb-8">
       <div className="subscribe__container container grid gap-20 2xl:max-w-5xl">
@@ -27,8 +33,17 @@ const Footer = () => {
               Hexlab is digital agency that has evolved to the meet changing
               needs of marketing in the digital age.
             </p>
-            <div className="footer__theme mt-8 inline-flex h-[52px] cursor-pointer items-center gap-2 rounded-full bg-blue-600 p-4 font-semibold text-white hover:bg-blue-800">
-              <RiMoonClearFill className="inline-flex text-[1.8rem]" />
+            <div
+              className="footer__theme mt-8 inline-flex h-[52px] cursor-pointer items-center gap-2 rounded-full bg-blue-600 p-4 font-semibold text-white hover:bg-blue-800"
+              onClick={() =>
+                setColorMode(colorMode === "light" ? "dark" : "light")
+              }
+            >
+              {colorMode === "light" ? (
+                <RiMoonClearFill className="inline-flex text-[1.8rem]" />
+              ) : (
+                <RiSunFill className="inline-flex text-[1.8rem]" />
+              )}
               Theme toggle.
             </div>
           </div>
