@@ -14,7 +14,7 @@ const Portfolio = () => {
       {/* gradient accent */}
       <div className="absolute top-96 -right-56 -z-10 h-[460px] w-[460px] rounded-full bg-gradient-to-b from-green-500/80 to-yellow-300/80 blur-[100px]" />
 
-      <div className="portfolio__container container grid gap-12">
+      <div className="portfolio__container container grid gap-12 2xl:max-w-5xl">
         <div className="portfolio__data text-center">
           <img
             src={PortfolioIcon}
@@ -35,10 +35,13 @@ const Portfolio = () => {
           </Link>
         </div>
 
-        <div className="portfolio__group grid grid-cols-[0.9fr] justify-center gap-12">
+        <div className="portfolio__group grid grid-cols-[0.9fr] justify-center gap-12 md:grid-cols-2">
           {portfolioData.map((item, index) => {
             return (
-              <div key={index} className="portfolio__content group grid gap-6">
+              <div
+                key={index}
+                className="portfolio__content group grid cursor-pointer gap-6"
+              >
                 <div className="portfolio__content-overlay relative overflow-hidden">
                   <img
                     src={item.image}
