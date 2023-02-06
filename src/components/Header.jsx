@@ -25,25 +25,21 @@ const Header = () => {
   return (
     <header
       className={`header fixed top-0 left-0 z-50 w-full transition-all duration-400 ${
-        shadowHeader
-          ? "bg-white shadow-md dark:bg-gray-900"
-          : "bg-transparent shadow-none"
+        shadowHeader ? "bg-white shadow-md" : "bg-transparent shadow-none"
       }`}
     >
       <div className="header__container container flex h-24 items-center justify-between">
         {/* header logo */}
         <Link
           to="/"
-          className={`header__logo text-[20px] font-extrabold text-gray-900 ${
-            shadowHeader ? "dark:text-white" : "dark:text-gray-900"
-          }`}
+          className="header__logo text-[20px] font-extrabold text-gray-900"
         >
           Hexlab<span className="text-blue-600">.</span>
         </Link>
 
         {/* header menu */}
         <div
-          className={`header__menu fixed right-[8%] top-20 w-[250px] origin-top-right rounded-3xl bg-white p-6 shadow-[0_0_16px_rgba(0,0,0,0.12)] transition-all duration-400 dark:bg-gray-900 lg:static lg:right-0 lg:top-0 lg:flex lg:w-auto lg:scale-100 lg:items-center lg:gap-6 lg:bg-transparent lg:p-0 lg:shadow-none lg:dark:bg-transparent ${
+          className={`header__menu fixed right-[8%] top-20 w-[250px] origin-top-right rounded-3xl bg-white p-6 shadow-[0_0_16px_rgba(0,0,0,0.12)] transition-all duration-400 lg:static lg:right-0 lg:top-0 lg:flex lg:w-auto lg:scale-100 lg:items-center lg:gap-6 lg:bg-transparent lg:p-0 lg:shadow-none ${
             menuOpen ? "scale-100" : "scale-0"
           }`}
         >
@@ -53,11 +49,7 @@ const Header = () => {
                 <Link
                   key={index}
                   to={item.url}
-                  className={`header__item flex h-[52px] rounded-full p-4 text-[15px] font-medium text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800 lg:h-auto lg:p-0 lg:hover:bg-transparent lg:dark:hover:bg-transparent ${
-                    shadowHeader
-                      ? "lg:dark:text-white"
-                      : "lg:dark:text-gray-900"
-                  }`}
+                  className="header__item flex h-[52px] rounded-full p-4 text-[15px] font-medium hover:bg-gray-100 lg:h-auto lg:p-0 lg:hover:bg-transparent"
                 >
                   {item.title}
                 </Link>
@@ -73,9 +65,7 @@ const Header = () => {
 
         {/* header toggle */}
         <div
-          className={`header__toggle inline-flex cursor-pointer p-1 text-[1.3rem] text-gray-900 lg:hidden ${
-            shadowHeader ? "dark:text-white" : "dark:text-gray-900"
-          }`}
+          className="header__toggle inline-flex cursor-pointer p-1 text-[1.3rem] text-gray-900 lg:hidden"
           onClick={() => setMenuOpen(!menuOpen)}
         >
           {menuOpen ? <RiCloseFill /> : <RiMenu3Fill />}
