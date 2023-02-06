@@ -14,8 +14,8 @@ const Experience = () => {
       {/* gradient accents */}
       <div className="absolute top-96 -left-48 -z-10 h-[460px] w-[460px] rounded-full bg-gradient-to-tr from-pink-500/80 to-yellow-300/80 blur-[100px]" />
 
-      <div className="experience__container container grid gap-12">
-        <div className="experience__data text-center">
+      <div className="experience__container container grid gap-12 2xl:max-w-5xl">
+        <div className="experience__data justify-self-center text-center xs:max-w-md sm:max-w-lg md:max-w-2xl">
           <img
             src={ExperienceIcon}
             alt="experience icon"
@@ -26,7 +26,7 @@ const Experience = () => {
             Experience, <br />
             Creatice, nad helpful<span className="text-blue-600">.</span>
           </h1>
-          <p className="about__text section-text pb-8">
+          <p className="about__text section-text pb-8 md:mx-auto md:max-w-xl">
             We're digital creative agency located in LA. We focus on creating
             responsive website, web designs, SEO services, UI/UX designs,
             website with all over maintenance, hosting, domain name
@@ -39,7 +39,7 @@ const Experience = () => {
           </Link>
         </div>
 
-        <div className="experience__group grid grid-cols-[0.8fr] justify-center gap-8">
+        <div className="experience__group grid grid-cols-[0.8fr] justify-center gap-8 md:grid-cols-2 md:justify-self-center lg:flex lg:justify-between lg:gap-20">
           {experienceData.map((item, index) => {
             return (
               <div key={index} className="experience__content grid text-center">
