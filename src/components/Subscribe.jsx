@@ -11,7 +11,7 @@ const Subscribe = () => {
       {/* gradient accents */}
       <div className="absolute top-0 -right-48 -z-10 h-[460px] w-[460px] rounded-full bg-gradient-to-tr from-pink-500/80 to-yellow-300/80 blur-[100px]" />
 
-      <div className="subscribe__container container grid gap-12">
+      <div className="subscribe__container container grid gap-12 xs:max-w-sm sm:max-w-md">
         <div className="subscribe__data text-center">
           <img
             src={SubscribeIcon}
